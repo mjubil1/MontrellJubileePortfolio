@@ -1,6 +1,5 @@
 import React /*, { Component }*/ from "react";
 import phsLogo from "../../images/phsLogo.jpeg";
-import wthsLogo1 from "../../images/wthsLogo1.jpg";
 import towsonLogo2 from "../../images/towsonLogo2.jpeg";
 //import eduClipArt from "../../images/educationClipArt.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
