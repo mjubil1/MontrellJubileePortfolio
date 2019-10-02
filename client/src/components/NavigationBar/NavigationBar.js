@@ -11,25 +11,25 @@ export default class NavigationBar extends React.Component  {
   render() {
     return (
          <header>
-           
+
             <nav >
                <div className="menu-icon">
                   <i className="fa fa-bars fa-2x"></i>
                </div>
                <div className="logo">
-                  David M. Hanlon
+                  Montrell Jubilee
                </div>
                <div className="menu">
                   <ul>
                       {/* <li><NavLink exact ={true} activeClassName='active' to ='/'>Home</NavLink></li> */}
                       {/* <li><a  href='/'> Home</a></li> */}
-                      
+
                       <li><a   href="#about"> About Me </a></li>
                       <li><a   href="#education"> Education </a></li>
                       <li><a   href="#experience"> Experience</a></li>
                       <li><a   href="#technical"> Skills</a></li>
                       <li><a   href="#contact"> Contact Me</a></li>
-                      
+
                       {/* <li><a activeClassName='active' href="#about"> About Me</a></li>
                       <li><a activeClassName='active' href="#education"> Education</a></li>
                       <li><a activeClassName='active' href="#experience"> Experience</a></li>
@@ -40,12 +40,12 @@ export default class NavigationBar extends React.Component  {
                       {/* <li><NavLink exact ={true} activeClassName='active' to ='/#Projects'>Projects</NavLink></li>  */}
                       {/* <li><NavLink exact ={true} activeClassName='active' to ='/#References'>References</NavLink></li>*/}
                       {/* <li><NavLink exact ={true} activeClassName='active' to ='/#ContactMe'>Contact Me</NavLink></li>*/}
- 
+
                   </ul>
                </div>
             </nav>
          </header>
     );
-   
+
   }
 }

@@ -6,21 +6,21 @@ import PropTypes from "prop-types";
 import {  withRouter} from "react-router-dom";
 
 import { connect } from "react-redux";
-import { logoutUser } from "../actions/authActions";
-import PageIntro from "../components/PageIntro/pageIntro";
+import { logoutUser } from "../../actions/authActions";
+import PageIntro from "../../components/PageIntro/pageIntro";
 
-import AboutMe from "../components/AboutMe/aboutMe";
-import Education from "../components/Education/education";
-import Experience from "../components/Experience/experience";
+import AboutMe from "../../components/AboutMe/aboutMe";
+import Education from "../../components/Education/education";
+import Experience from "../../components/Experience/experience";
 //import Projects from "../components/Projects/projects";
 //import References from "../components/References/references";
-import TechSkills from "../components/TechSkills/techskills";
+import TechSkills from "../../components/TechSkills/techskills";
 //import ContactMe from "../components/ContactForm/contactForm";
-import ContactMe from '../components/ContactForm/ContactForm';
-import Footer from "../components/footer/footer";
+import ContactMe from '../../components/ContactForm/ContactForm';
+import Footer from "../../components/footer/footer";
 
 
-class Landing extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -56,27 +56,27 @@ class Landing extends React.Component {
       <PageIntro></PageIntro>
       <AboutMe></AboutMe>
       <Education></Education>
-      <Experience></Experience> 
+      <Experience></Experience>
       <TechSkills></TechSkills>
       {/* <Projects></Projects>   */}
       <ContactMe></ContactMe>
       <div></div>
       <div className="backToTop" style={{opacity: 0.85}}>
-    
+
           <a href="#intro"><i className="fa fa-arrow-up"> </i></a>
-      
-          
-       
-        
+
+
+
+
       </div>
 
       <Footer></Footer>
       </div>
-     
+
     );
   }
 }
-Landing.propTypes = {
+Home.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -86,4 +86,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { logoutUser }
-)(withRouter(Landing));
+)(withRouter(Home));

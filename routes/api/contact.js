@@ -19,8 +19,8 @@ router.post('/contactme', (req, res) => {
         }//kvuzmfkedbaegxtp $Cosc412ReviewMe$
     });
     let mailOptions = {
-        from: '"David Hanlon Contact Form" <'+req.body.email+'>',
-        to: 'davidhanlon23@gmail.com',
+        from: '"Montrell Jubilee Contact Form" <'+req.body.email+'>',
+        to: 'mjubil96@gmail.com',
         subject: "New Message from the Contact Form",
         //text: 'From: '+req.body.email+' Phone#: '+req.body.phone+' Message: ' +req.body.help//,
         html: `<ul><li><p>From: </p>${req.body.email}</li><li><p>Phone#: </p> ${req.body.phone}</li><li><p>Message: </p> ${req.body.help}</li></ul>`
@@ -37,5 +37,5 @@ router.post('/contactme', (req, res) => {
         .then(doc => res.status(200).redirect('/thankyou'))
         .catch(err => res.status(500).send(err));
   });
-  
+
   module.exports = router;

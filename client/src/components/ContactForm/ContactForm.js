@@ -42,10 +42,10 @@ export default class ContactMe extends React.Component {
     const isDisabled = Object.keys(errors).some(x => errors[x]);
 
     return (
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={1}> 
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={1}>
          <section className="page-section" id="contact">
         <div className="container mb-5 mt-5">
-        
+
         <div className="row">
             <div className="col-12 col-md-12">
               <h1 className="secondary-section-header pb-4 text-center">Contact Me</h1>
@@ -57,13 +57,13 @@ export default class ContactMe extends React.Component {
             <div className="col-12 col-md-6">
               <p className="h4 mb-4 font-weight-bold">Contact Information</p>
              <ul className="list-unstyled list-inline social contact-list quick-links">
-               <li><a href="tel:443-735-2450"><i className="fa fa-phone fa-3x"></i> <p> 443-735-2450</p></a></li>
-               <li><a href="mailto:davidhanlon23@gmail.com"><i className="fa fa-envelope fa-1x"></i><p>davidhanlon23@gmail.com</p></a></li>
+               <li><a href="tel:443-754-4354"><i className="fa fa-phone fa-3x"></i> <p> 443-754-4354</p></a></li>
+               <li><a href="mailto:mjubil96@gmail.com"><i className="fa fa-envelope fa-1x"></i><p>mjubil96@gmail.com</p></a></li>
                <li><a href="https://www.google.com/maps/dir//6011+York+Rd,+Baltimore,+MD+21212/@39.3620816,-76.6100315,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c80562556432f3:0xab3a3ca46237d0e8!2m2!1d-76.609533!2d39.366449"><i className="fa fa-location-arrow fa-1x"></i><p>  6011 York, Rd. Baltimore, Md 21212</p> </a></li>
-               
-             </ul>  
+
+             </ul>
             </div>
-            
+
             <div className="col-12 col-md-6">
             <p className="h4 mb-4 font-weight-bold">Contact Form</p>
               <form action="/api/contact/contactme" method="post">
@@ -85,13 +85,13 @@ export default class ContactMe extends React.Component {
                   </button>
               </form>
             </div>
-            
+
           </div>
         </div>
       </section>
       </ScrollAnimation>
-   
-      
+
+
     );
   }
 }

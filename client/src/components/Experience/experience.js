@@ -1,11 +1,7 @@
 import React /*, { Component }*/ from "react";
 import cybraryLogo from '../../images/cybrary3.png'
-import etsLogo from '../../images/etsLogo.png';
-import sproutLogo1 from '../../images/sproutLogo1.png';
-
-//
+import studiocodeworksLogo from '../../images/studiocodeworksLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faCalendarAlt} from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 import "animate.css/animate.min.css";
@@ -15,11 +11,11 @@ export default class Experience extends React.Component {
 
   render() {
     return (
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={1}> 
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={1}>
       <section className="page-section" id="experience">
 
       <div className="container mb-5 mt-5">
-        
+
 
       <div className="row">
           <div className="col-12 col-md-12">
@@ -28,7 +24,7 @@ export default class Experience extends React.Component {
             </h1>
           </div>
         </div>
-      
+
 
         <div className="row" id="workInfo">
           <div id="company1" className="col-12 col-md-8">
@@ -40,29 +36,23 @@ export default class Experience extends React.Component {
                 worldwide
               </i>
             </p>
-            
+
             <ul className="list-unstyled list-inline">
-              <li className="list-inline-item text-left"><FontAwesomeIcon icon={faCalendarAlt} color="#000000"/>&nbsp;&nbsp;June 2018 - August 2018</li>
-              <li className="list-inline-item text-right"> <FontAwesomeIcon icon={faMapMarkerAlt} color="#000000"/>&nbsp;&nbsp;Greenbelt, MD</li>
-            
-            
+              <li className="list-inline-item text-left"><FontAwesomeIcon icon={faCalendarAlt} color="#000000"/>&nbsp;&nbsp;February 2018 - Present</li>
+              <li className="list-inline-item text-right"> <FontAwesomeIcon icon={faMapMarkerAlt} color="#000000"/>&nbsp;&nbsp;College Park, MD</li>
+
+
             </ul>
-          
+
             <ul>
               <li>
-                  Automated the Executive Dashboard using JavaScript and Google
-                  technologies and APIs which resulted in reducing errors and
-                  increasing productivity among leadership through the elimination of
-                  manual entry.
+              Developed unit test using react-testing-library to test that components rendered on the screen properly and correct data was being displayed.
               </li>
               <li>
-                  Increased the frequency of the automated Executive Dashboard from
-                  monthly to weekly which provided the leadership team with more
-                  accurate and timely information on which to act.
+                Integrated custom restAPIs from backend and displayed information onto frontend of application
               </li>
               <li>
-                  Conducted Data Exports for requested customers which resulted in
-                  improved customer relations
+                Worked with Postman to make sure API routes functioned and worked properly.
               </li>
             </ul>
 
@@ -74,24 +64,22 @@ export default class Experience extends React.Component {
 
         <div className="row" id="workInfo">
           <div id="company2" className="col-12 col-md-8">
-            <a href="http://www.elavonpayments.com"><h2>Electronic Transaction Systems (ETS)</h2></a>
+            <a href="http://www.studiocodeworks.com"><h2>StudioCodeWorks Inc</h2></a>
             <p>
               <i>
-                ETS, now known as Elavon Payments and Emoney is an international corporation that offers merchant
-                services to clients seeking comprehensive Payment Card
-                Industry (PCI)-compliant merchant processing
-                solutions.
+                StudioCodeWorks is a software development company who help
+                clients build their dream software product in a thoughtful and efficient manner
               </i>
             </p>
             <ul className="list-unstyled list-inline">
-              <li className="list-inline-item text-left"><FontAwesomeIcon icon={faCalendarAlt} color="#000000"/>&nbsp;&nbsp;June 2017 - August 2017</li>
-              <li className="list-inline-item text-right"> <FontAwesomeIcon icon={faMapMarkerAlt} color="#000000"/>&nbsp;&nbsp;Berlin, MD</li>   
+              <li className="list-inline-item text-left"><FontAwesomeIcon icon={faCalendarAlt} color="#000000"/>&nbsp;&nbsp;February 2018 - September 2018</li>
+              <li className="list-inline-item text-right"><FontAwesomeIcon icon={faMapMarkerAlt} color="#000000"/>&nbsp;&nbsp;Upper Marlboro, MD</li>
             </ul>
-          
+
             <ul>
               <li>
-                  Most of internship consisted of individual research using online 
-                  resources such as Udemy and Codecademy learning NodeJS, Ionic framework and 
+                  Most of internship consisted of individual research using online
+                  resources such as Udemy and Codecademy learning NodeJS, Angular and
                   hybrid mobile app development practices
               </li>
               <li>
@@ -99,68 +87,29 @@ export default class Experience extends React.Component {
                   more informative marketing decisions
               </li>
               <li>
-                  Learned how to use Sketch, and InVision in order to create UI/UX prototypes
+                Developed both backend and frontend purely PHP and Html/css for a HVAC client and
+                configured and managed a large database consisting of thousands of employees with PhpMyAdmin
               </li>
               <li>
                   Consulted with Software Development team to aid in uncovering any bugs on
-                  the company’s website, and EMoney virtual wallet mobile application
+                  the company’s website
               </li>
             </ul>
           </div>
           <div className="col-12 col-md-4">
-            <img alt="ETS Logo" src={etsLogo} height="250px" width="250px"></img>
+            <img alt="ETS Logo" src={studiocodeworksLogo} height="250px" width="250px"></img>
           </div>
         </div>
-
-
-        <div className="row" id="workInfo">
-          <div id="company3" className="col-12 col-md-8" >
-            <a href="https://www.sproutcreatives.com"><h2>Sprout Creatives</h2></a>
-            <p>
-              <i>
-                Sprout Creatives is a full-service website and graphic
-                design firm that specializes in growing small businesses.
-              </i>
-            </p>
-            <ul className="list-unstyled list-inline">
-              <li className="list-inline-item text-left"><FontAwesomeIcon icon={faCalendarAlt} color="#000000"/>&nbsp;&nbsp;June 2015 - August 2015</li>
-              <li className="list-inline-item text-right"> <FontAwesomeIcon icon={faMapMarkerAlt} color="#000000"/>&nbsp;&nbsp;Berlin, MD</li>
-            
-            
-            </ul>
-            
-            
-            <ul>
-              <li>
-                Used HTML5, CSS, JavaScript, Business Catalyst, Adobe’s
-                Photoshop, and Adobe’s DreamWeaver, to assist in the developing,
-                deploying, and maintaining of customers’ websites
-              </li>
-              <li>
-                Backed up files from websites to local directories for instant
-                recovery in the event of website failure
-              </li>
-            </ul>
-          </div>
-          <div className="col-12 col-md-4">
-            <img alt="Sprout Creatives Logo" src={sproutLogo1} height="250px" width="250px"></img>
-          </div>
-        </div>
-
-
-
-
-
-      </div>         
-      </section>      
+      </div>
+      </section>
       </ScrollAnimation>
-      
+
     );
   }
 }
 /*
 
 
-              
-              
+
+
 */
