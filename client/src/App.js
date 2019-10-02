@@ -13,6 +13,7 @@ import ThankYou from "./pages/ThankYou/ThankYou";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import RealEstate from "./pages/RealEstate/RealEstate";
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -31,26 +32,40 @@ if (localStorage.jwtToken) {
     window.location.href = "./admin";
   }
 }
+
 class App extends Component {
+  getChoice = (choice) => {
+    if(choice === 1) {
+      console.log("hello")
+      return(
+        <div>
+          <Route exact path="/" component={NavigationBar}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/thankyou" component={ThankYou}/>
+          <Route exact path="/admin" component={Login} />
+          <Switch>
+            <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          </Switch>
+        </div>
+      )
+    } else {
+        return(
+          <div>
+            <Route exact path="/" component={RealEstate} />
+          </div>
+        )
+    }
+  }
+
   render() {
     return (
       <Provider store={store}>
-
         <Router>
           <div className="App">
-            {/* <NavigationBar /> */}
-            <Route exact path="/" component={NavigationBar}/>
-            <Route exact path="/" component={Home} />
-            {/* <Route exact path="/register" component={Register} /> */}
-            <Route exact path="/thankyou" component={ThankYou}/>
-            <Route exact path="/admin" component={Login} />
-            <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
-            </Switch>
+            <button onClick={this.getChoice(1)}>Software Portfolio</button>
+            <button onClick={this.getChoice(2)}>Real Estate</button>
           </div>
         </Router>
-
-
       </Provider>
     );
   }
