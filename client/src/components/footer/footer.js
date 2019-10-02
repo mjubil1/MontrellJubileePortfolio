@@ -41,13 +41,11 @@ const Footer = () => {
 					</p> */}
 					<p id="textLink">
 						I attended High School on the Eastern Shore of Maryland in Worcester County
-						(same county as Ocean City) at Pocomoke High School and Worcester Technical
-						High School (similar to magnet schools but also offer STEM courses) simultaneously.
-						Upon graduating High School in 2015, I accepted my offer from Towson University to
-						pursue my Bachelor's in Computer Science. I graduated Towson University in May 2019.
-						My hobbies include playing/watching sports, playing video games with friends, learning
-						new technologies through the likes of Udemy and Codecademy, traveling, photography, and
-						music production. My current career goal is focusing on being the best Software Engineer
+						(same county as Ocean City) at Pocomoke High School.Upon graduating High School in 2015,
+						I accepted my offer from Towson University to pursue my Bachelor's in Computer Science.
+						I graduated Towson University in December 2018. My hobbies include playing/watching sports,
+						playing video games with friends, learning new technologies through the likes of Udemy and Codecademy,
+						and traveling. My current career goal is focusing on being the best Software Engineer
 						that I can possibly be and maximizing my potential while still at a young age. I am proud to
 						say that most of the technologies and tools I have learned besides Java, and OOP concepts
 						have all been self taught. The technologies used for the construction of this portfolio
