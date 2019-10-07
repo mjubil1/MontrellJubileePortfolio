@@ -21,8 +21,8 @@ class PortfolioNavigationBar extends Component {
                </div>
             </nav>
          </header>
-    );
-  }
+      );
+   }
 }
 
 export default PortfolioNavigationBar;
