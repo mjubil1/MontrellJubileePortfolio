@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-
-//import { BrowserRouter as Link } from "react-router-dom";
-//import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
@@ -52,14 +48,9 @@ return (
         <div className="container">
           <div style={{ marginTop: "4rem" }} className="row">
             <div className="col s8 offset-s2">
-             
-                <a className="btn-flat waves-effect" href="/">
-                  <FontAwesomeIcon id="icon1" icon={faArrowLeft} /> &nbsp;Back To Home
-                </a>
-              
-                
-             
-              
+              <a className="btn-flat waves-effect" href="/">
+                <FontAwesomeIcon id="icon1" icon={faArrowLeft} /> &nbsp;Back To Home
+              </a> 
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <h4>
                   <b>Login</b> below
