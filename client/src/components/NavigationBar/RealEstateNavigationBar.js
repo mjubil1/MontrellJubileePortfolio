@@ -13,10 +13,10 @@ class RealEstateNavigationBar extends Component {
                </div>
                <div className="menu" style={{ backgroundColor: "blue" }}>
                   <ul>
-                    <li><a href="#education">PROPERTY SEARCH</a></li>
-                    <li><a href="#experience">MY RECENT LISTINGS</a></li>
-                    <li><a href="#about">ABOUT ME </a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
+                    <li><a href="/real-estate/property-search">PROPERTY SEARCH</a></li>
+                    <li><a href="/real-estate/recent-listings">MY RECENT LISTINGS</a></li>
+                    <li><a href="/real-estate/about">ABOUT ME </a></li>
+                    <li><a href="/real-estate/contact">CONTACT ME</a></li>
                   </ul>
                </div>
             </nav>
