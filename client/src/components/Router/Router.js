@@ -9,6 +9,7 @@ import PrivateRoute from "../private-route/PrivateRoute";
 // Components
 import Login from "../auth/Login";
 import Register from "../auth/Register";
+import RealEstateAgent from "../../pages/Agent/RealEstateAgent";
 /**
  * Site Router
 */
@@ -17,9 +18,11 @@ const Router = () => {
     <Switch>
       {/* HOME PAGE */}
       <Route exact path="/" component={Home} />
+
       <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/real-estate" component={RealEstateAgent} />
       <Route exact path="/register" component={Register} />
-      <Route exact path="/thankyou" component={ThankYou}/>
+      <Route exact path="/thank-you" component={ThankYou}/>
       <Route exact path="/admin" component={Login} />
       <PrivateRoute exact path="/dashboard" component={Dashboard} />
     </Switch>
