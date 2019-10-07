@@ -1,19 +1,12 @@
 import React, { Component } from "react";
-import { Button } from 'react-bootstrap';
 import "./home.css";
+import LandingButtons from "../../components/Landing/LandingButtons";
 class Home extends Component {
   render() {
     return (
-        <div>
-          <div>
-          <Button>
-
-          </Button>
-          <Button>
-
-          </Button>
-          </div>
-        </div>
+      <div className="landing-content">
+        <LandingButtons  />
+      </div>
     );
   }
 }

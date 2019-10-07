@@ -1,3 +1,4 @@
-div {
-  background-color: red;
+.landing-content {
+  height: 100vh;
+  margin-top: 20%;
 }
