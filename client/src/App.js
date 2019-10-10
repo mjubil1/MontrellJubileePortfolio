@@ -36,7 +36,6 @@ if (localStorage.jwtToken) {
 class App extends Component {
   getChoice = (choice) => {
     if(choice === 1) {
-      console.log("hello")
       return(
         <div>
           <Route exact path="/" component={NavigationBar}/>
