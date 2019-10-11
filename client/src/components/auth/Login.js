@@ -1,14 +1,9 @@
 import React, { Component } from "react";
+import PropTypes from "./node_modules/prop-types";
+import classnames from "./node_modules/classnames";
+import { FontAwesomeIcon } from './node_modules/@fortawesome/react-fontawesome';
+import { faArrowLeft} from './node_modules/@fortawesome/free-solid-svg-icons';
 
-//import { BrowserRouter as Link } from "react-router-dom";
-//import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { loginUser } from "../../actions/authActions";
-import classnames from "classnames";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 class Login extends Component {
   constructor() {
     super();
@@ -23,7 +18,7 @@ componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/dashboard");
     }
-  }  
+  }
 componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard"); // push user to dashboard when they login
@@ -52,14 +47,11 @@ return (
         <div className="container">
           <div style={{ marginTop: "4rem" }} className="row">
             <div className="col s8 offset-s2">
-             
+
                 <a className="btn-flat waves-effect" href="/">
                   <FontAwesomeIcon id="icon1" icon={faArrowLeft} /> &nbsp;Back To Home
                 </a>
-              
-                
-             
-              
+
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <h4>
                   <b>Login</b> below
@@ -122,7 +114,6 @@ return (
           </div>
         </div>
       </section>
-      
     );
   }
 }
@@ -131,11 +122,5 @@ Login.propTypes = {
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
-const mapStateToProps = state => ({
-  auth: state.auth,
-  errors: state.errors
-});
-export default connect(
-  mapStateToProps,
-  { loginUser }
-)(Login);
+
+export default Login;

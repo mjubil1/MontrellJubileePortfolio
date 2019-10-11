@@ -3,12 +3,12 @@
 import React /*, { Component }*/ from "react";
 import PageIntro from "../../components/PageIntro/pageIntro";
 
-import AboutMe from "../../components/AboutMe/aboutMe";
-import Education from "../../components/Education/education";
-import Experience from "../../components/Experience/experience";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import Education from "../../components/Education/Education";
+import Experience from "../../components/Experience/Experience";
 import TechSkills from "../../components/TechSkills/techskills";
 import ContactMe from '../../components/ContactForm/ContactForm';
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/Footer/Footer";
 
 class RealEstate extends React.Component {
   constructor() {

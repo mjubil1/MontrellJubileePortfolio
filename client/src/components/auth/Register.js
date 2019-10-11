@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter as Link, withRouter } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { registerUser } from "../../actions/authActions";
-import classnames from "classnames";
+import { BrowserRouter as Link } from "react-router-dom";
+import PropTypes from "./node_modules/prop-types";
+import classnames from "./node_modules/classnames";
+
 class Register extends Component {
   constructor() {
     super();
@@ -20,7 +19,7 @@ class Register extends Component {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/dashboard");
     }
-  }  
+  }
 componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -39,7 +38,7 @@ const newUser = {
       password: this.state.password,
       password2: this.state.password2
     };
-this.props.registerUser(newUser, this.props.history); 
+this.props.registerUser(newUser, this.props.history);
   };
 render() {
     const { errors } = this.state;
@@ -47,13 +46,13 @@ return (
       <div className="container">
         <div className="row">
           <div className="col s8 offset-s2">
-           
+
             <Link to="/" className="btn-flat waves-effect">
                 <i className="material-icons left">keyboard_backspace</i> Back to
                 home
             </Link>
-           
-            
+
+
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
                 <b>Register</b> below
@@ -145,11 +144,5 @@ Register.propTypes = {
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
-const mapStateToProps = state => ({
-  auth: state.auth,
-  errors: state.errors
-});
-export default connect(
-  mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+
+export default Register;

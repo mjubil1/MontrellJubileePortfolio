@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import React, { Component } from "./node_modules/react";
+import PropTypes from "./node_modules/prop-types";
 import { logoutUser } from "../../actions/authActions";
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -17,7 +17,7 @@ return (
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
                 You are logged in
-                
+
               </p>
             </h4>
             <button
@@ -42,10 +42,5 @@ Dashboard.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Dashboard);
+
+export default Dashboard;

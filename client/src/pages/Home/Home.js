@@ -1,23 +1,16 @@
 
 
-import React /*, { Component }*/ from "react";
-//import { BrowserRouter as Link } from "react-router-dom";
+import React from "react";
 import PropTypes from "prop-types";
-import {  withRouter} from "react-router-dom";
-
-import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import PageIntro from "../../components/PageIntro/pageIntro";
 
-import AboutMe from "../../components/AboutMe/aboutMe";
-import Education from "../../components/Education/education";
-import Experience from "../../components/Experience/experience";
-//import Projects from "../components/Projects/projects";
-//import References from "../components/References/references";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import Education from "../../components/Education/Education";
+import Experience from "../../components/Experience/Experience";
 import TechSkills from "../../components/TechSkills/techskills";
-//import ContactMe from "../components/ContactForm/contactForm";
 import ContactMe from '../../components/ContactForm/ContactForm';
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/Footer/Footer";
 
 
 class Home extends React.Component {
@@ -80,10 +73,5 @@ Home.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(withRouter(Home));
+
+export default Home;
